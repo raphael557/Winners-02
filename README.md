@@ -1,3 +1,4 @@
+![GitHub License](https://img.shields.io/github/license/raphael557/Winners-02)
 
 
 # Winners-02
