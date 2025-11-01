@@ -1,0 +1,149 @@
+/* Layout >>>>>>>>>>>>>> */
+
+/* Variávreis */
+:root {
+    --preto: #0D0D0D;
+    --cinza: #2E2E2E;
+    --branco: #F5F5F5;
+}
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "parkinsans";
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+/* Fim - Layout <<<<<<<<<<<< */
+
+
+
+/* Smartphone Portrait >>>>>>>>>>>>>> */
+
+/*cabeçalho*/
+header {
+    height: 65px;
+    background-color: var(--preto);
+}
+
+#logo img {
+    width: 128px;
+    height: 128px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 100px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    color: rgba(245, 245, 245, 0.75);
+    font-size: 2rem;
+    position: fixed;
+    right: 15px;
+    top: 10px;
+}
+
+nav ul {
+    height: 100vh;
+    background-color: rgba(46, 46, 46, 0.75);
+    position: fixed;
+    top: 65px;
+    right: -65%;
+    width: 50%;
+    transition: all 1s;
+}
+
+/* Ação para a caixa checkbox */
+/* Quando selecionado mudar propriedades ul*/
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid var(--preto);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--branco)
+}
+
+/* Fim - Smartphone Portrait <<<<<<<<<<<< */
+
+/* Smartphone Landscape >>>>>>>>>>>>>> */
+@media(min-width: 576px) {
+  
+    /*Layout*/
+    .container {
+        max-width: 540px;
+    }
+
+    /* Cabeçalho */
+    nav ul{
+        width: 40%;
+        right: -40%;
+    }
+
+}
+/* Fim - Smartphone Landscape <<<<<<<<<<<< */
+
+/* tablet Portrait >>>>>>>>>>>>>> */
+@media(min-width: 768px) {
+  
+    /*Layout*/
+    .container {
+        max-width: 768px;
+    }
+
+}
+/* Fim - tablet Portrait <<<<<<<<<<<< */
+
+/* Tablet Landscape >>>>>>>>>>>>>> */
+@media(min-width: 992px) {
+  
+    /*Layout*/
+    .container {
+        max-width: 992px;
+    }
+
+}
+
+/* Fim - Tablet Landscape <<<<<<<<<<<< */
+
+/* Notebook >>>>>>>>>>>>>> */
+@media(min-width: 1200px) {
+  
+    /*Layout*/
+    .container {
+        max-width: 1140px;
+    }
+
+}
+
+/* Fim - Notebook/PC <<<<<<<<<<<< */
+
+/*Full HD /4K >>>>>>>>>>>>>> */
+@media(min-width: 1400px) {
+  
+    /*Layout*/
+    .container {
+        max-width: 1320px;
+    }
+}
+/* Fim - Full HD /4K <<<<<<<<<<<< */
+
+
