@@ -5,6 +5,7 @@
     --preto: #0D0D0D;
     --cinza: #2E2E2E;
     --branco: #F5F5F5;
+    --laranja: #ff7a00;
 }
 
 /* CSS reset */
@@ -130,7 +131,39 @@ nav ul li a {
     /*Layout*/
     .container {
         max-width: 1140px;
+        justify-content: space-between;
     }
+
+    /* Cabeçalho */
+    header {
+        height: 80px;
+    }
+
+    #logo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 8px;
+    }
+
+    nav ul li{
+        border: 0;
+        float: left;
+    }
+
+    nav ul li a:hover {
+        color: var(--laranja);
+}
 
 }
 
