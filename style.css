@@ -5,7 +5,7 @@
     --preto: #0D0D0D;
     --cinza: #2E2E2E;
     --branco: #F5F5F5;
-    --laranja: #ff7a00;
+    --vermelho: #9c0b16;
 }
 
 /* CSS reset */
@@ -162,7 +162,7 @@ nav ul li a {
     }
 
     nav ul li a:hover {
-        color: var(--laranja);
+        color: var(--vermelho);
 }
 
 }
