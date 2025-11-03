@@ -4,7 +4,7 @@
 Site usando HTML5 e CSS3 para a empresa Winners Motivation!
 
 ## Autor
-Raphaeel Mestre Oliveira
+Raphael Mestre Oliveira
 
 ## Acessar o site
 ![](./img/QRCODE.png)
