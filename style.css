@@ -23,6 +23,13 @@ body {
     display: flex;
     margin: 0 auto;
 }
+
+.btn{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border: 1px solid var(--branco);
+}
 /* Fim - Layout <<<<<<<<<<<< */
 
 
@@ -41,6 +48,7 @@ header {
     margin-top: 30px;
     margin-left: 20px;
     border-radius: 100px;
+    border: 1px solid var(--branco);
 }
 
 #check {
@@ -83,6 +91,44 @@ nav ul li a {
     color: var(--branco)
 }
 
+/* Principal */
+main {
+    height: 70vh;
+    background: url(img/Fundo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: var(--branco);
+    text-shadow: 2px 2px 4px var(--preto);
+}
+
+main h2 {
+    font-size: 1.0rem;
+    color: var(--preto);
+}
+
+main a {
+    text-decoration: none;
+    font-size: 0.6rem;
+    color: var(--branco);
+    background-color: var(--preto);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+
 /* Fim - Smartphone Portrait <<<<<<<<<<<< */
 
 /* Smartphone Landscape >>>>>>>>>>>>>> */
@@ -98,6 +144,12 @@ nav ul li a {
         width: 40%;
         right: -40%;
     }
+
+    /* Principal */
+    main {
+        height: 100vh;
+    }
+
 
 }
 /* Fim - Smartphone Landscape <<<<<<<<<<<< */
