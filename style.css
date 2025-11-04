@@ -177,7 +177,7 @@ main a {
 
 /* Fim - Tablet Landscape <<<<<<<<<<<< */
 
-/* Notebook >>>>>>>>>>>>>> */
+/* Notebook/PC >>>>>>>>>>>>>> */
 @media(min-width: 1200px) {
   
     /*Layout*/
@@ -216,6 +216,11 @@ main a {
     nav ul li a:hover {
         color: var(--vermelho);
 }
+
+/* Principal */
+    main h1{
+        height: 7vh;
+    }
 
 }
 
