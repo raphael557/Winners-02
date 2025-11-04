@@ -29,6 +29,13 @@ body {
     font-size: 1.3rem;
     padding: 10px 20px;
     border: 1px solid var(--branco);
+    
+}
+
+.btn:hover {
+    background-color: var(--vermelho);
+    border: 1px solid var(--vermelho);
+    transition: 0.5s;
 }
 /* Fim - Layout <<<<<<<<<<<< */
 
@@ -215,6 +222,7 @@ main a {
 
     nav ul li a:hover {
         color: var(--vermelho);
+        transition: 0.5s;
 }
 
 /* Principal */
