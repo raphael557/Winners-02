@@ -116,13 +116,13 @@ main .container {
 }
 
 main h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: var(--branco);
     text-shadow: 2px 2px 4px var(--preto);
 }
 
 main h2 {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     color: var(--branco);
 }
 
