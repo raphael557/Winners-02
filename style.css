@@ -136,6 +136,61 @@ main a {
     border-radius: 15px;
 }
 
+/* Destaque */
+#destaque{
+    padding: 50px 15px;
+    background: url(./img/Foto\ de\ fundo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaque .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img{
+    width: 300px;
+    height: 240px;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    border: 1px solid var(--dourado);
+}
+
+#hero-text h2{
+    margin-bottom: 15px;
+    color: var(--dourado);
+}
+
+#hero-text p {
+    color: var(--branco);
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.topics img {
+    width: 40px;
+    height: 40px;
+}
+
+.topics{
+    display: flex;
+    align-items: left;
+    margin-bottom: 30px;
+}
+
+.topics p {
+    margin-left: 15px;
+    color: var(--branco);
+}
+
+
+
+
 
 /* Fim - Smartphone Portrait <<<<<<<<<<<< */
 
@@ -156,6 +211,35 @@ main a {
     /* Principal */
     main {
         height: 100vh;
+    }
+
+    /* Destaque */
+    #destaque {
+        padding: 50px 0px;
+    }
+
+    #destaque .container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: left;
+    }
+
+    #hero img {
+        width: 200px;
+        height: 160px;
+        margin: 0px 50px 0px 0px;
+    }
+
+    .topics {
+        display: none;
+    }
+
+    .topics img {
+        width: 60px;
+        height: 60px;
     }
 
 
@@ -231,7 +315,24 @@ main a {
         height: 7vh;
     }
 
+/* Destaque */
+    #destaque {
+        background-attachment: fixed;
+        /* Efeito parallax */
+    }
+
+    #hero img {
+        width: 300px;
+        height: 260px;
+    }
+
+    .topics {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
+
 
 /* Fim - Notebook/PC <<<<<<<<<<<< */
 
