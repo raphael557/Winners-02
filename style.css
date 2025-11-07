@@ -224,9 +224,51 @@ main a {
 }
 
 
+/*Conteúdo*/
+#Conteúdo {
+    padding: 50px 0px;
+    background: url(./img/Foto\ de\ fundo.png);
+    background-size: cover;
+    background-position: left;
+}
 
+#Conteúdo .container {
+    margin-bottom: 10px;
+    flex-direction: center;
+}
 
+#Conteúdo p {
+    color: var(--branco);
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+#Conteúdo .qrcode img{
+    display: none;
+}
+
+#Conteúdo .btn{
+    display: block;
+    margin: 12px 0;
+    padding: 14px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background-color: var(--dourado);
+    border: 1px solid var(--dourado);
+    transition: 0.5s;
+}
 /* Fim - Smartphone Portrait <<<<<<<<<<<< */
 
 /* Smartphone Landscape >>>>>>>>>>>>>> */
@@ -277,6 +319,11 @@ main a {
         height: 50px;
         align-items: center ;
     }
+
+    /*Conteúdo*/
+    #Conteúdo .qrcode img{
+    display: none;
+    }
 }    
 /* Fim - Smartphone Landscape <<<<<<<<<<<< */
 
@@ -323,6 +370,11 @@ main a {
         width: 560px;
         height: 320px;
         
+    }
+
+    /*Conteúdo*/
+    #Conteúdo .qrcode img{
+    display: none;
     }
 
 }
@@ -421,6 +473,23 @@ main a {
         max-width: 100%;
         border: none;
     }
+
+    /*Conteúdo*/
+    #Conteúdo .container {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    #Conteúdo p {
+        max-width: 700px;
+        text-align: left;
+    }
+
+    #Conteúdo .qrcode img{
+        display: flex;
+        flex-direction: row;
+        height: 250px;
+    }
 }
 /* Fim - Notebook/PC <<<<<<<<<<<< */
 
@@ -433,7 +502,4 @@ main a {
     }
 }
 /* Fim - Full HD /4K <<<<<<<<<<<< */
-<<<<<<< HEAD
 
-=======
->>>>>>> b27e9af610b22ef88a42cb7d8f171c745b55f812
