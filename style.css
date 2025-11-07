@@ -197,7 +197,9 @@ main a {
 }
 
 #Sobre .container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #Sobre h2 {
@@ -206,9 +208,9 @@ main a {
 }
 
 #Sobre p {
-    color: var(--cinza);
+    color: var(--preto);
     margin-bottom: 35px;
-    text-align: left;
+    text-align: center;
 }
 
 #Sobre-video {
@@ -217,8 +219,8 @@ main a {
 }
 
 #Sobre-video iframe {
-    width: 340px;
-    height: 191px;
+    width: 330px;
+    height: 220px;
 }
 
 
@@ -275,39 +277,7 @@ main a {
         height: 50px;
         align-items: center ;
     }
-
-    /* Sobre */
-    #Sobre .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #Sobre {
-        padding: 50px 10px;
-    }
-
-    #Sobre h2 {
-        margin-bottom: 20px;
-        text-align: center;
-        font-weight: 900;
-    }
-
-    #Sobre p{
-        margin-bottom: 25px;
-        text-align: center;
-    }
-
-    #Sobre-video {
-        display: flex;
-        justify-content: center;
-    }
-
-    #Sobre-video iframe {
-        width: 200px;
-        height: 150px;
-    }
-
+}    
 /* Fim - Smartphone Landscape <<<<<<<<<<<< */
 
 /* tablet Portrait >>>>>>>>>>>>>> */
@@ -316,6 +286,11 @@ main a {
     /*Layout*/
     .container {
         max-width: 768px;
+    }
+
+    #Sobre-video iframe {
+        width: 700px;
+        height: 320px;
     }
 
 }
@@ -329,14 +304,28 @@ main a {
         max-width: 992px;
     }
 
-}
+    #Sobre .container {
+        flex-direction: row;
+        align-items: center;
+        padding: 40px 0px;
+    }
+
+    #Sobre p{
+        text-align: left;
+    }
+
+    #Sobre-video {
+        width: 960px;
+        height: 320px;
+    }
 
     #Sobre-video iframe {
-        width: 550px;
-        height: 350px;
+        width: 560px;
+        height: 320px;
         
     }
 
+}
 /* Fim - Tablet Landscape <<<<<<<<<<<< */
 
 /* Notebook/PC >>>>>>>>>>>>>> */
@@ -406,15 +395,12 @@ main a {
         align-items: center;
     }
     
-}
-
     /* Sobre */
 
     #Sobre .container {
-        display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     #Sobre p {
@@ -424,7 +410,7 @@ main a {
 
     #Sobre-video {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         align-items: center;
     }
 
@@ -435,7 +421,7 @@ main a {
         max-width: 100%;
         border: none;
     }
-
+}
 /* Fim - Notebook/PC <<<<<<<<<<<< */
 
 /*Full HD /4K >>>>>>>>>>>>>> */
@@ -447,5 +433,3 @@ main a {
     }
 }
 /* Fim - Full HD /4K <<<<<<<<<<<< */
-
-}
