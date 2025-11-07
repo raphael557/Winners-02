@@ -189,6 +189,39 @@ main a {
 }
 
 
+/* Sobre */
+#Sobre {
+    background-color: var(--branco);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#Sobre .container {
+    flex-direction: column;
+}
+
+#Sobre h2 {
+    margin-bottom: 30px;
+    color: var(--dourado);
+}
+
+#Sobre p {
+    color: var(--cinza);
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+#Sobre-video {
+    display: flex;
+    justify-content: center;
+}
+
+#Sobre-video iframe {
+    width: 340px;
+    height: 191px;
+}
+
+
 
 
 
@@ -215,7 +248,7 @@ main a {
 
     /* Destaque */
     #destaque {
-        padding: 50px 0px;
+        padding: 50px 20px;
     }
 
     #destaque .container{
@@ -238,12 +271,43 @@ main a {
     }
 
     .topics img {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
+        align-items: center ;
     }
 
+    /* Sobre */
+    #Sobre .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-}
+    #Sobre {
+        padding: 50px 10px;
+    }
+
+    #Sobre h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    #Sobre p{
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    #Sobre-video {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Sobre-video iframe {
+        width: 200px;
+        height: 150px;
+    }
+
 /* Fim - Smartphone Landscape <<<<<<<<<<<< */
 
 /* tablet Portrait >>>>>>>>>>>>>> */
@@ -266,6 +330,12 @@ main a {
     }
 
 }
+
+    #Sobre-video iframe {
+        width: 550px;
+        height: 350px;
+        
+    }
 
 /* Fim - Tablet Landscape <<<<<<<<<<<< */
 
@@ -328,11 +398,43 @@ main a {
 
     .topics {
         display: flex;
-        flex-direction: column;
     }
 
+    .topics img {
+        width: 40px;
+        height: 40px;
+        align-items: center;
+    }
+    
 }
 
+    /* Sobre */
+
+    #Sobre .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #Sobre p {
+        max-width: 550px;
+        text-align: left;
+    }
+
+    #Sobre-video {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    #Sobre-video iframe {
+        width: 560px;
+        height: 315px;
+        max-width: 100%;
+        border: none;
+    }
 
 /* Fim - Notebook/PC <<<<<<<<<<<< */
 
@@ -346,4 +448,4 @@ main a {
 }
 /* Fim - Full HD /4K <<<<<<<<<<<< */
 
-
+}
