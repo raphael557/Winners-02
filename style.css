@@ -24,12 +24,12 @@ body {
     margin: 0 auto;
 }
 
-.btn{
+.btn {
     text-decoration: none;
     font-size: 1.3rem;
     padding: 10px 20px;
     border: 1px solid var(--branco);
-    
+
 }
 
 .btn:hover {
@@ -37,6 +37,7 @@ body {
     border: 1px solid var(--dourado);
     transition: 0.5s;
 }
+
 /* Fim - Layout <<<<<<<<<<<< */
 
 
@@ -137,14 +138,14 @@ main a {
 }
 
 /* Destaque */
-#destaque{
+#destaque {
     padding: 50px 15px;
     background: url(./img/Foto\ de\ fundo.png);
     background-size: cover;
     background-position: center;
 }
 
-#destaque .container{
+#destaque .container {
     flex-direction: column;
     align-items: center;
 }
@@ -153,7 +154,7 @@ main a {
     text-align: center;
 }
 
-#hero img{
+#hero img {
     width: 300px;
     height: 240px;
     margin-bottom: 50px;
@@ -161,7 +162,7 @@ main a {
     border: 1px solid var(--dourado);
 }
 
-#hero-text h2{
+#hero-text h2 {
     margin-bottom: 15px;
     color: var(--dourado);
 }
@@ -177,7 +178,7 @@ main a {
     height: 40px;
 }
 
-.topics{
+.topics {
     display: flex;
     align-items: left;
     margin-bottom: 30px;
@@ -226,7 +227,7 @@ main a {
 
 /*Conteúdo*/
 #Conteúdo {
-    padding: 50px 0px;
+    padding: 50px 20px;
     background: url(./img/Foto\ de\ fundo.png);
     background-size: cover;
     background-position: left;
@@ -235,21 +236,23 @@ main a {
 #Conteúdo .container {
     margin-bottom: 10px;
     flex-direction: center;
+    text-align: center;
+}
+
+#Conteúdo h2 {
+    margin-bottom: 25px;
+    color: var(--dourado);
 }
 
 #Conteúdo p {
     color: var(--branco);
     font-size: 0.8rem;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-#Conteúdo .qrcode img{
-    display: none;
-}
-
-#Conteúdo .btn{
+#Conteúdo .btn {
     display: block;
     margin: 12px 0;
     padding: 14px;
@@ -269,18 +272,23 @@ main a {
     border: 1px solid var(--dourado);
     transition: 0.5s;
 }
+
+#qrcode-img img{
+        display: none;
+    }
+
 /* Fim - Smartphone Portrait <<<<<<<<<<<< */
 
 /* Smartphone Landscape >>>>>>>>>>>>>> */
 @media(min-width: 576px) {
-  
+
     /*Layout*/
     .container {
         max-width: 540px;
     }
 
     /* Cabeçalho */
-    nav ul{
+    nav ul {
         width: 40%;
         right: -40%;
     }
@@ -295,7 +303,7 @@ main a {
         padding: 50px 20px;
     }
 
-    #destaque .container{
+    #destaque .container {
         flex-direction: row;
         align-items: center;
     }
@@ -317,19 +325,20 @@ main a {
     .topics img {
         width: 50px;
         height: 50px;
-        align-items: center ;
+        align-items: center;
     }
 
     /*Conteúdo*/
-    #Conteúdo .qrcode img{
-    display: none;
+    #qrcode-img img {
+        display: none;
     }
-}    
+}
+
 /* Fim - Smartphone Landscape <<<<<<<<<<<< */
 
 /* tablet Portrait >>>>>>>>>>>>>> */
 @media(min-width: 768px) {
-  
+
     /*Layout*/
     .container {
         max-width: 768px;
@@ -341,11 +350,12 @@ main a {
     }
 
 }
+
 /* Fim - tablet Portrait <<<<<<<<<<<< */
 
 /* Tablet Landscape >>>>>>>>>>>>>> */
 @media(min-width: 992px) {
-  
+
     /*Layout*/
     .container {
         max-width: 992px;
@@ -357,7 +367,7 @@ main a {
         padding: 40px 0px;
     }
 
-    #Sobre p{
+    #Sobre p {
         text-align: left;
     }
 
@@ -369,20 +379,21 @@ main a {
     #Sobre-video iframe {
         width: 560px;
         height: 320px;
-        
+
     }
 
     /*Conteúdo*/
-    #Conteúdo .qrcode img{
-    display: none;
+    #qrcode-img img {
+        display: none;
     }
 
 }
+
 /* Fim - Tablet Landscape <<<<<<<<<<<< */
 
 /* Notebook/PC >>>>>>>>>>>>>> */
 @media(min-width: 1200px) {
-  
+
     /*Layout*/
     .container {
         max-width: 1140px;
@@ -411,7 +422,7 @@ main a {
         margin-top: 8px;
     }
 
-    nav ul li{
+    nav ul li {
         border: 0;
         float: left;
     }
@@ -419,14 +430,14 @@ main a {
     nav ul li a:hover {
         color: var(--dourado);
         transition: 0.5s;
-}
+    }
 
-/* Principal */
-    main h1{
+    /* Principal */
+    main h1 {
         height: 7vh;
     }
 
-/* Destaque */
+    /* Destaque */
     #destaque {
         background-attachment: fixed;
         /* Efeito parallax */
@@ -446,7 +457,7 @@ main a {
         height: 40px;
         align-items: center;
     }
-    
+
     /* Sobre */
 
     #Sobre .container {
@@ -475,9 +486,14 @@ main a {
     }
 
     /*Conteúdo*/
+    #Conteúdo {
+        background-attachment: fixed;
+        /* Efeito parallax */
+    }
+
     #Conteúdo .container {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
     }
 
     #Conteúdo p {
@@ -485,21 +501,23 @@ main a {
         text-align: left;
     }
 
-    #Conteúdo .qrcode img{
+    #qrcode-img img {
         display: flex;
         flex-direction: row;
-        height: 250px;
+        width: 225px;
+        height: 225px;
     }
 }
+
 /* Fim - Notebook/PC <<<<<<<<<<<< */
 
 /*Full HD /4K >>>>>>>>>>>>>> */
 @media(min-width: 1400px) {
-  
+
     /*Layout*/
     .container {
         max-width: 1320px;
     }
 }
-/* Fim - Full HD /4K <<<<<<<<<<<< */
 
+/* Fim - Full HD /4K <<<<<<<<<<<< */
