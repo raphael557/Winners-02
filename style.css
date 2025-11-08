@@ -140,7 +140,7 @@ main a {
 /* Destaque */
 #destaque {
     padding: 50px 15px;
-    background: url(./img/Foto\ de\ fundo.png);
+    background: url(./img/Foto\ de\ fundo.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -180,7 +180,7 @@ main a {
 
 .topics {
     display: flex;
-    align-items: left;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -228,14 +228,14 @@ main a {
 /*Conteúdo*/
 #Conteúdo {
     padding: 50px 20px;
-    background: url(./img/Foto\ de\ fundo.png);
+    background: url(./img/Foto\ de\ fundo.jpg);
     background-size: cover;
     background-position: left;
 }
 
 #Conteúdo .container {
     margin-bottom: 10px;
-    flex-direction: center;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -252,7 +252,7 @@ main a {
     margin-bottom: 20px;
 }
 
-#Conteúdo .btn {
+.btn {
     display: block;
     margin: 12px 0;
     padding: 14px;
@@ -276,6 +276,8 @@ main a {
 #qrcode-img img{
         display: none;
     }
+
+
 
 /* Fim - Smartphone Portrait <<<<<<<<<<<< */
 
@@ -331,6 +333,11 @@ main a {
     /*Conteúdo*/
     #qrcode-img img {
         display: none;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 24px;
     }
 }
 
