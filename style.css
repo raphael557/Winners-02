@@ -73,7 +73,17 @@ body {
     margin-top: 25px;
 }
 
+/* topo do site */
+#topo{
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+}
 
+/* scroll suave */
+html {
+    scroll-behavior: smooth;
+}
 
 /* Fim - Layout <<<<<<<<<<<< */
 
@@ -324,6 +334,69 @@ main a {
     align-items: center;
 }
 
+/* contato */
+address {
+    padding: 45px 20px 50px 20px;
+    background: url(img/Foto\ de\ fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--branco);
+}
+
+address .container{
+    justify-content: space-between;
+}
+
+#contato a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#maps {
+    display: none;
+}
+
+#contato img{
+        padding: 20px 10px 20px 10px;
+    }
+
+#endereco img{
+    padding: 20px 10px 20px 10px;
+}
+
+/* footer */
+footer {
+    padding: 50px 0px;
+    background-color: var(--branco);
+    font-size: 0.875rem;
+    color: var(--preto);
+    text-align: center;
+}
+
+footer .container{
+    flex-direction: column-reverse;
+}
+
+footer a{
+    text-decoration: none;
+    color:#0D0D0D;
+}
+
+footer p{
+    padding: 10px 10px 10px 10px;
+}
+
+#social a{
+    padding: 20px 20px 20px 20px;
+}
+
+#contato p{
+    width: 180px;
+    height: 100px;
+
+}
+
+
 /* Fim - Smartphone Portrait <<<<<<<<<<<< */
 
 /* Smartphone Landscape >>>>>>>>>>>>>> */
@@ -572,6 +645,20 @@ main a {
         height: 225px;
     }
 
+    /* Contato */
+    #maps {
+        display: flex;
+    }
+    
+    #contato img{
+        padding: 100px 10px 10px 10px;
+    }
+
+    #endereco img{
+        padding: 100px 10px 10px 10px;
+    }
+
+    
 }
 
 /* Fim - Notebook/PC <<<<<<<<<<<< */
