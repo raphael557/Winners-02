@@ -150,7 +150,7 @@ nav ul li a {
 /* Principal */
 main {
     height: 70vh;
-    background: url(img/Fundo.png);
+    background: url(img/Fundo.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -197,10 +197,6 @@ main a {
     align-items: center;
 }
 
-#hero {
-    text-align: center;
-}
-
 #hero img {
     width: 300px;
     height: 240px;
@@ -216,7 +212,6 @@ main a {
 
 #hero-text p {
     color: var(--branco);
-    margin-bottom: 30px;
     line-height: 25px;
 }
 
@@ -229,6 +224,7 @@ main a {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .topics p {
@@ -583,6 +579,10 @@ footer p{
     #hero img {
         width: 300px;
         height: 260px;
+    }
+
+    #hero-text p{
+        align-items: center;
     }
 
     .topics {
